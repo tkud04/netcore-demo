@@ -11,7 +11,7 @@ RUN npm install --progress=true --loglevel=silent
 # RUN find src
 # RUN find src
 # RUN ls -al src
-RUN npm run build
+# RUN npm run build
 
 FROM microsoft/dotnet:2.1-sdk-alpine AS builder
 WORKDIR /source
