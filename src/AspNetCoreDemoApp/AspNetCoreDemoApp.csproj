@@ -22,7 +22,6 @@
 
   <Target Name="PrePublishTarget" BeforeTargets="PrepareForPublish" Condition="$(DOTNET_RUNNING_IN_CONTAINER) != 'true'">
     <Exec Command="npm install" />
-    <Exec Command="npm run build" />
     <ItemGroup>
       <Dist Include="../../build/**" />
     </ItemGroup>
